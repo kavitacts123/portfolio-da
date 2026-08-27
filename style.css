@@ -8,9 +8,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-.py_0{
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+.py_0 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* =========================
@@ -27,49 +28,52 @@ body {
   opacity: 0.15;
   z-index: -1;
 }
-a.navbar-brand.text-neon.fw-bold{
- color: #00f7ff;   
+
+a.navbar-brand.text-neon.fw-bold {
+  color: #00f7ff;
 }
-.nav-link:focus, .nav-link:hover {
-    color: white !important;
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white !important;
 }
 
 .btn-neon {
-    background: #00f7ff;
-    color: #001;
-    border-radius: 30px;
-    padding: 12px 28px;
-    font-weight: 600;
-    border: none;
-    transition: 0.3s;
+  background: #00f7ff;
+  color: #001;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
 }
 
 .btn-neon:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px #00f7ff;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #00f7ff;
 }
 
 
 .btn-outline-light {
-    border: 2px solid #00f7ff;
-    color: #00f7ff;
-    border-radius: 30px;
-    padding: 12px 28px;
-    font-weight: 600;
-    background: transparent;
-    transition: 0.3s;
+  border: 2px solid #00f7ff;
+  color: #00f7ff;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 600;
+  background: transparent;
+  transition: 0.3s;
 }
 
 .btn-outline-light:hover {
-    background: #00f7ff;
-    color: #001;
+  background: #00f7ff;
+  color: #001;
 }
 
 /* =========================
    NAVBAR
 ========================= */
 .glass-nav {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
 }
 
@@ -136,11 +140,11 @@ a.navbar-brand.text-neon.fw-bold{
    GLASS CARD (ABOUT / EXPERIENCE)
 ========================= */
 .glass-card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0,247,255,0.1);
+  border: 1px solid rgba(0, 247, 255, 0.1);
 }
 
 .edu-icon {
@@ -176,46 +180,44 @@ a.navbar-brand.text-neon.fw-bold{
   font-weight: 500;
 }
 
-.circle-box{
-  display:flex;
+.circle-box {
+  display: flex;
   justify-content: space-around;
 }
 
-.circle-wrapper{
-  text-align:center;
+.circle-wrapper {
+  text-align: center;
 }
 
-.circle{
-  width:110px;
-  height:110px;
-  border-radius:50%;
-  position:relative;
+.circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position: relative;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  background: conic-gradient(
-    var(--clr) calc(var(--value) * 1%),
-    #e9ecef 0
-  );
+  background: conic-gradient(var(--clr) calc(var(--value) * 1%),
+      #e9ecef 0);
 }
 
 /* inner white circle (donut effect) */
-.circle::before{
-  content:"";
-  position:absolute;
-  width:95px;
-  height:95px;
-  background:black;
-  border-radius:50%;
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  background: black;
+  border-radius: 50%;
 }
 
 /* text in center */
-.circle span{
-  position:relative;
-  font-weight:bold;
-  font-size:18px;
+.circle span {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 
@@ -234,12 +236,13 @@ a.navbar-brand.text-neon.fw-bold{
   box-shadow: 0 0 25px #00f7ff;
   border-color: #00f7ff;
 }
+
 .project-card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 15px;
   transition: 0.4s ease;
-  border: 1px solid rgba(0,247,255,0.1);
+  border: 1px solid rgba(0, 247, 255, 0.1);
 
   /* ⭐ IMPORTANT FIX */
   height: 100%;
@@ -283,12 +286,12 @@ a.navbar-brand.text-neon.fw-bold{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   color: #00f7ff;
   font-size: 22px;
   transition: 0.4s ease;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0,247,255,0.2);
+  border: 1px solid rgba(0, 247, 255, 0.2);
   text-decoration: none;
 }
 
@@ -299,13 +302,106 @@ a.navbar-brand.text-neon.fw-bold{
   box-shadow: 0 0 20px #00f7ff;
 }
 
+#chat {
+  color: black;
+}
+
+.chat-messages {
+  height: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#ai-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+
+  width: 80px;
+  height: 80px;
+
+  background: #00f7ff;
+  color: black;
+
+  border-radius: 30px;
+  border: none;
+
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 16px;
+}
+
+.ai-img {
+  width: 60px;
+}
+
+.chat-messages .btn-outline-light {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: black;
+  border: 1px solid black;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+button#send-btn {
+  color: black;
+  background: cyan;
+  border: 1px solid black;
+  border-radius: 39px;
+  width: 100px;
+}
+
+#ai-box {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 450px;
+  max-width: calc(100vw - 40px);
+  height: 500px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  z-index: 9999;
+  border: 1px solid #eee;
+}
+
 /* =========================
    ANIMATIONS
 ========================= */
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -320,8 +416,13 @@ a.navbar-brand.text-neon.fw-bold{
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 /* =========================
@@ -330,7 +431,7 @@ a.navbar-brand.text-neon.fw-bold{
 @media (max-width: 576px) {
   .hero-img {
     width: 250px;
-            margin-top: 50px;
+    margin-top: 50px;
 
   }
 
@@ -338,21 +439,92 @@ a.navbar-brand.text-neon.fw-bold{
     padding: 20px;
   }
 
+  #ai-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .ai-img {
+    width: 30px;
+  }
+
   .social a {
     width: 45px;
     height: 45px;
     font-size: 18px;
   }
+
+  .chat-messages .btn-outline-light {
+    margin-top: 0;
+  }
+
+  #chat {
+    color: black;
+    margin-top: 10px;
+  }
+
+
+  #ai-box {
+    width: 380px;
+    max-width: calc(100vw - 30px);
+
+    right: 15px;
+    bottom: 80px;
+  }
+
 }
+
 
 @media (max-width: 376px) {
 
-.btn-neon {
+  .btn-neon {
     width: 100%;
-}
-.btn-outline-light {
+  }
+
+  .btn-outline-light {
     width: 100%;
     margin-top: 20px;
-}
+  }
+
+  button#send-btn {
+    width: 100%;
+  }
+
+  #ai-box {
+    width: calc(100vw - 20px);
+    height: 450px;
+
+    right: 10px;
+    bottom: 70px;
+
+    padding: 12px;
+  }
+
+  .ai-input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  #q {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  #send-btn {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 10px;
+  }
+
 
 }

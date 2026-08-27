@@ -12,6 +12,7 @@
 
   <!-- ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -55,7 +56,7 @@
     <div class="container mb-4">
       <div class="row">
         <div class="col-12 col-lg-6 text-center">
-          <img src="kavita.png" class="hero-img">
+          <img src="./images/kavita.png" class="hero-img">
         </div>
 
         <!-- CONTENT -->
@@ -372,7 +373,7 @@
           <a href="https://kavitacts123.github.io/powerbi-executive-sales-dashboard/" target="_blank"
             style="text-decoration:none; color:inherit;">
             <div class="project-card">
-              <img src="dashboard-preview.png" class="img-fluid">
+              <img src="./images/dashboard-preview.png" class="img-fluid">
               <h5 class="mt-3">Sales Dashboard (Power BI)</h5>
               <p>Interactive Power BI dashboard with KPIs, sales trends, profit analysis, and regional insights.</p>
             </div>
@@ -383,7 +384,7 @@
           <a href="https://kavitacts123.github.io/Traffic-Analysis-Excel-Dashboard/" target="_blank"
             style="text-decoration:none; color:inherit;">
             <div class="project-card">
-              <img src="Dashboard1.png" class="img-fluid">
+              <img src="./images/Dashboard1.png" class="img-fluid">
               <h5 class="mt-3">Traffic Analysis Dashboard (Excel)</h5>
               <p>Excel dashboard featuring data cleaning, pivot tables, slicers, KPIs, and interactive charts.</p>
             </div>
@@ -391,7 +392,7 @@
         </div>
 
         <div class="col-12 col-lg-4">
-          <a href="https://kavitacts123.github.io/python-data-analysis-project/" target="_blank"
+          <a href="https://kavitacts123.github.io/Traffic-Analysis-Excel-Dashboard/" target="_blank"
             style="text-decoration:none; color:inherit;">
             <div class="project-card">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" class="img-fluid">
@@ -502,8 +503,57 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script src="script.js"></script>
+  <!-- AI ASSISTANT -->
+ <!-- AI BUTTON -->
+<button id="ai-btn" onclick="toggleAI()">
+    <img class="ai-img" src="./images/icons8-ai-64.png" alt="AI Icon">
+    <!-- <span>Tell me about me</span> -->
+</button>
 
+
+<!-- AI CHAT BOX -->
+<div class="chat-messages" id="ai-box">
+
+    <b>🤖 Ask about my work</b>
+
+    <button 
+            type="button"
+            class="btn btn-sm btn-outline-light"
+            onclick="closeAI()"
+            aria-label="Close chat">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    <div id="chat">
+        <p class="ai-class">
+            Hi! 👋 Ask me about my skills or projects.
+        </p>
+    </div>
+
+
+    <!-- INPUT AREA -->
+    <div class="ai-input-area d-flex gap-2">
+
+    <input
+        id="q"
+        type="text"
+        class="form-control"
+        placeholder="Type your question..."
+    >
+
+    <button
+        id="send-btn"
+        type="button"
+        class="btn btn-dark"
+        onclick="send()">
+        Send
+    </button>
+
+</div>
+
+</div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
